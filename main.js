@@ -9,3 +9,5 @@ const cardGrid = document.querySelector('.card-grid');
         cardGrid.appendChild(createdSquare);
     }
 })();
+
+console.log('testing');
