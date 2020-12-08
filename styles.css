@@ -4,16 +4,23 @@
     box-sizing: border-box;
 }
 
+.card-title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     width: 75vw;
     height: 75vh;
+    margin: 0 auto;
 }
 
 .square {
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 .free-square {
@@ -21,4 +28,5 @@
     background: red;
     text-align: center;
     align-items: center;
+    font-size: 3rem;
 }

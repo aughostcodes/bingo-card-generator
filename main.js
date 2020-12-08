@@ -17,4 +17,24 @@ function toggleFreeSquare() {
     }
 }
 
-console.log('testing');
+// just testing
+let library = [];
+
+function Book(){
+}
+
+Book.prototype.sayInfo = function () {
+    console.log(this.info);
+}
+
+function NewBook(name, author, info) {
+    this.name = name;
+    this.author = author;
+    this.info = info;
+}
+
+NewBook.prototype = Object.create(Book.prototype);
+
+const wasteLand = new NewBook('The Waste Land', 'Eliot', 'your thesis');
+
+library.push(wasteLand);
