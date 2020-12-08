@@ -35,6 +35,11 @@ function NewBook(name, author, info) {
 
 NewBook.prototype = Object.create(Book.prototype);
 
-const wasteLand = new NewBook('The Waste Land', 'Eliot', 'your thesis');
+const wasteLand = new NewBook('The Waste Land', 'Eliot', 'Your thesis');
+
+const hangovers = new NewBook('Hangovers', 'Bukowski', 'It takes an ungodly durability');
 
 library.push(wasteLand);
+library.push(hangovers);
+
+// What is the undefined between the console.logs?
