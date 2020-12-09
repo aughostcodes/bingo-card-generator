@@ -16,30 +16,3 @@ function toggleFreeSquare() {
         cardGrid.childNodes[13].textContent = 'FREE';
     }
 }
-
-// just testing
-let library = [];
-
-function Book(){
-}
-
-Book.prototype.sayInfo = function () {
-    console.log(this.info);
-}
-
-function NewBook(name, author, info) {
-    this.name = name;
-    this.author = author;
-    this.info = info;
-}
-
-NewBook.prototype = Object.create(Book.prototype);
-
-const wasteLand = new NewBook('The Waste Land', 'Eliot', 'Your thesis');
-
-const hangovers = new NewBook('Hangovers', 'Bukowski', 'It takes an ungodly durability');
-
-library.push(wasteLand);
-library.push(hangovers);
-
-// What is the undefined between the console.logs?
